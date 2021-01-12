@@ -1,0 +1,8 @@
+<%= form_with(model: @user, local: true) do |f| %>
+    <%= f.label :name, '名前変更' %>
+    <%= f.text_field :name %>
+    
+    <%= f.submit '変更' %>
+<% end %>
+
+<%= link_to 'My profile', user_path(@user) %>
